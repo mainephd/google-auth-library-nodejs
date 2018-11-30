@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import {AxiosError, AxiosPromise, AxiosRequestConfig, AxiosResponse} from 'axios';
+import {AxiosError, AxiosPromise, AxiosRequestConfig, AxiosResponse, Method} from 'axios';
 import * as crypto from 'crypto';
 import * as querystring from 'querystring';
 import * as stream from 'stream';
@@ -725,7 +725,7 @@ export class OAuth2Client extends AuthClient {
     const opts = {
       url: OAuth2Client.GOOGLE_OAUTH2_REVOKE_URL_ + '?' +
           querystring.stringify({token}),
-      method: 'POST'
+      method: 'POST' as Method
     };
     if (callback) {
       this.transporter.request<RevokeCredentialsResult>(opts).then(
