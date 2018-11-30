@@ -18,7 +18,7 @@
   ],
   "dependencies": {
     "gcp-metadata": "git+https://github.com/mainephd/gcp-metadata.git#9931e04171ff9606b12beb65bc6bf189bbd7c111",
-    "gtoken": "^2.3.0",
+    "gtoken": "git+https://github.com/mainephd/node-gtoken.git#e88d90c23e91188013d4719faf04b5a7be7accde",
     "https-proxy-agent": "^2.2.1",
     "jws": "^3.1.5",
     "lru-cache": "^5.0.0",
